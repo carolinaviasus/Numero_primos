@@ -1,0 +1,36 @@
+print("Para conocer si es un numero primo ")
+division0=0
+contador=1
+iniciar=0
+
+while(iniciar==0):
+  print("ingrese el numero") 
+  numero1=int(input())
+  if(numero1<=1):
+    print("No es un numero primo")
+  else:
+   while(numero1>=contador):
+    modulo = numero1%contador
+    if(modulo==0):
+     contador +=1
+     division0 +=1
+    else:
+     contador+=1
+     
+   if(division0==2):
+     print("ES UN NUMERO PRIMO")
+   else:
+     print("No es un numero primo")
+    
+
+  print("deseas consultar otro numero")
+  print("1. SI , 2 NO")
+  decision=int(input())
+  if(decision == 1):
+   iniciar=0
+   division0=0
+   contador=1
+  else:
+   iniciar+=1
+   print("Gracias por consultar")
+
